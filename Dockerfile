@@ -12,6 +12,8 @@ RUN set -ex \
         gstreamer1.0-alsa \
         gstreamer1.0-plugins-bad \
         python-crypto \
+        python-dbus \
+        dleyna-server \
  && curl -L https://apt.mopidy.com/mopidy.gpg | apt-key add - \
  && curl -L https://apt.mopidy.com/mopidy.list -o /etc/apt/sources.list.d/mopidy.list \
  && apt-get update \
@@ -26,6 +28,10 @@ RUN set -ex \
         Mopidy-GMusic \
         Mopidy-Pandora \
         Mopidy-YouTube \
+        Mopidy-Emby \
+        Mopidy-TuneIn \
+        Mopidy-dLeyna \
+        Mopidy-Spotify-Tunigo \
         cryptography \
         pyasn1 \
         pyopenssl \
